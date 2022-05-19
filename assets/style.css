@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: #FAFAFA;
+}
+.cabecalho{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 114px;
+    position: fixed;
+    height: 199px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 0px;
+    
+}
+
+.barra-procura{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+
+    width: 450px;
+    height: 61px;
+
+    background: #FFFFFF;
+    border: 0.5px solid rgba(96, 96, 96, 0.3);
+    border-radius: 8px;
+}
+
+.pesquisa{
+    border: none;
+    width: 398px;
+    height: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: rgba(96, 96, 96, 0.6);
+}
+
+.lupa{
+    width: 20px;
+    height: 20px;
+}
+
+.logo-cabecalho{
+    width: 120px;
+    height: 119px;
+    padding: 40px 114px;
+}
+
+.container{
+    display: grid;
+    margin-top: 200px ;
+    padding: 160px 114px 80px 114px;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-template-rows: 50fr 50fr;
+    grid-row-gap: 32px;
+    grid-column-gap: 32px;
+    width: 1212px;
+    height: 512px;
+    left: 114px;
+    top: 279px;
+}
+.foto_grande{
+    width: 270px;
+    height: 270px;
+    padding: 24px 24px 31px;
+}
+.foto-pequena{
+    width: 192px;
+    height: 192px;
+    padding: 24px 24px 24px 24px;
+}
+
+.sorvete-tipo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    padding: 31px 24px 8px 24px;
+    font-weight: 400px;
+    color: #000000;
+}
+
+.sorvete-descricao{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #606060;
+    padding: 8px 24px 31px 24px;
+}
+
+.preco{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    gap:10px;
+    background: rgba(249, 199, 191, 0.5);
+    width: 105px;
+    height: 45px;
+    border-radius: 8px;
+}
+.preco-descricao{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400px;
+    padding: 7px;
+}
+
+.card-1{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.card-2{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.card-3{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.card-4{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.card-5{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.card-6{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+    height: 124px;
+    left: 0%;
+    right: 0%;
+    bottom: 0px;
+    width: 100%;
+    background: #F2F2F2;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center ;
+    padding: 0px;
+    gap: 15px;
+    top: 60.01px;
+    height: 50px;
+}
+.logo_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1.5px solid rgba(96, 96, 96, 0.3);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.logo-in{
+    left: 4.74%;
+    right: 90.57%;
+    top: 31.43%;
+    bottom: 34.66%;
+    width: 11.87px ;
+    height: 11.87px;  
+}
+
+.logo-face{
+    align-items: center;
+    left: 25.3%;
+    right: 71.95%;
+    top: 31.43%;
+    bottom: 33.93%;
+    width:6.97px;
+    height:12.12px;
+}
+
+
+.logo-tt{
+    align-items: center;
+    width:12.29px;
+    height: 10.38px;
+    left: 43.87%;
+    right: 51.27%;
+    top: 37.14%;
+    bottom: 33.19%;
+}
+
+
+
+.logo-rodape{
+    padding: 0px;
+    top:48px;
+    left:690px;
+    gap: 16px;
+}
+
+.logo-rodape{
+    width: 60px;
+    height: 59.02px;
+}
+
+.texto-rodape{
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 17px;
+    color:#292929;
+}
+
+@media screen and (max-width: 470px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
