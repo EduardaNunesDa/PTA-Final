@@ -76,7 +76,7 @@ body{
     left: 114px;
     top: 279px;
 }
-.foto_grande{
+.foto-grande{
     width: 270px;
     height: 270px;
     padding: 24px 24px 31px;
@@ -87,7 +87,7 @@ body{
     padding: 24px 24px 24px 24px;
 }
 
-.sorvete-tipo{
+.sorvete-tipo-1{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -98,7 +98,19 @@ body{
     color: #000000;
 }
 
-.sorvete-descricao{
+.sorvete-tipo-2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    padding: 31px 24px 8px 24px;
+    font-weight: 400px;
+    color: #000000;
+}
+
+
+.sorvete-descricao-1{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 16px;
@@ -107,18 +119,51 @@ body{
     padding: 8px 24px 31px 24px;
 }
 
-.preco{
+.sorvete-descricao-2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #606060;
+    padding: 8px 24px 31px 24px;
+}
+
+.preco-1{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 8px;
+    position: absolute;
+    padding: 2px;
+    top: 823px;
+    left: 136px;
     gap:10px;
     background: rgba(249, 199, 191, 0.5);
     width: 105px;
     height: 45px;
     border-radius: 8px;
 }
-.preco-descricao{
+.preco-2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    padding: 2px;
+    gap:10px;
+    top: 824px;
+    left: 758px;
+    background: rgba(249, 199, 191, 0.5);
+    width: 105px;
+    height: 45px;
+    border-radius: 8px;
+}
+.preco-descricao-1{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400px;
+    padding: 7px;
+}
+.preco-descricao-2{
     font-family: 'Montserrat';
     font-size: 24px;
     color: #000000;
@@ -194,7 +239,7 @@ body{
     left: 0%;
     right: 0%;
     bottom: 0px;
-    width: 100%;
+    width: 100rem;
     background: #F2F2F2;
 }
 
@@ -260,7 +305,8 @@ body{
 .logo-rodape{
     width: 60px;
     height: 59.02px;
-}
+} 
+
 
 .texto-rodape{
 
@@ -271,12 +317,252 @@ body{
     color:#292929;
 }
 
-@media screen and (max-width: 470px){
-    .container{
+
+@media  screen and (max-width: 390px) {
+    
+    .cabecalho{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 40px 32px 20px;
+        position: fixed;
+        height: 129.42px;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 0px;
+    }
+
+    .logo-cabecalho{
+        height: 69.41667175292969px;
+        width: 70px;
+        left: 32px;
+        top: 40px;
+        border-radius: 0px;
+
+    }
+
+    .barra-procura{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10.7pxpx;
+        width: 40px;
+        height: 40px;
+        left: 318px;
+        top: 54.708343505859375px;
+        padding: 5px, 11px, 5px, 11px;
+
+        background: #FFFFFF;
+        border: 0.5px solid rgba(96, 96, 96, 0.3);
+        border-radius: 8px;
+    }
+    .pesquisa{
+        display: none;
+    }
+
+    .lupa{
+        height: 13.37px;
+        width: 13.37px;
+        left: 13.31px;
+        top: 13.31px;
+        border-radius: 0px;
+
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 144px 144px 144px 144px;
+        grid-row-gap: 18px;
+        grid-column-gap: 17.68px;
+        width: 326px;
+        height: 584.31px;
+    }
+    .card-1{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 8.84068px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .card-2{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 8.84068px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .card-3{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 8.84068px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .card-4{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 8.84068px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .card-5{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 8.84068px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .card-6{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 8.84068px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    
+    .sorvete-descricao-1{
+        font-family: 'Montserrat';
+        position: absolute;
+        top: 557px;
+        left: 106.35px;
+        width: 146px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8.84068px;
+        line-height: 11px;
+        color: #606060;
+    }
+    .sorvete-descricao-2{
+        font-family: 'Montserrat';
+        position: absolute;
+        top: 887px;
+        left: 299.35px;
+        width: 146px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8.84068px;
+        line-height: 11px;
+        color: #606060;
+    }
+    .sorvete-tipo-1{
+        position: absolute;
+        top: 507px;
+        left: 106.35px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17.6814px;
+        line-height: 22px;
+        color: #292929;
+    }
+
+    .sorvete-tipo-2{
+        position: absolute;
+        width: 97px;
+        top: 836px;
+        left: 298.35px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17.6814px;
+        line-height: 22px;
+        color: #292929;
+    }
+    .preco-descricao-1{
+        position: absolute;
+        width: 51px;
+        padding: 4px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.261px;
+        line-height: 16px;
+        color: #000000
+    }
+
+    .preco-descricao-2{
+        display: flex;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        width: 51px;
+        font-size: 13.261px;
+        padding: 4px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .preco-1{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        position: absolute;
+        top: 610px;
+        left: 127.35px ;
+        padding: 4.42034px;
+        gap: 5.53px;
+        background: rgba(249, 199, 191, 0.5);
+        width: 57.84px;
+        height: 24.84px;
+        border-radius: 4.42034px;
+    }
+    .preco-2{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        position: absolute;
+        top: 935px;
+        left: 322.35px ;
+        padding: 4.42034px;
+        gap: 5.53px;
+        background: rgba(249, 199, 191, 0.5);
+        width: 57.84px;
+        height: 24.84px;
+        border-radius: 4.42034px;
+    }
+
+    .foto-pequena{
+        width: 106.09px;
+        height: 106.09px;
+        padding: 13.26px 13.26px 120.55px 13.26px;
+    }
+    .foto-grande{
+        width: 149.19px;
+        height: 149.19px;
+        padding: 13.26px 13.26px 13.31px 13.26px;
+    }
+    .rodape{
         width: 100%;
+        bottom: 0px;
+        height: 128px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .logo-rodape{
+        display: none;
+    }
+    .redes-sociais{
+        gap: 30px;
     }
 }
